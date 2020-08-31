@@ -7,7 +7,7 @@ vid.set(4,480)
 
 
 classNames = []
-classFile = 'Resources/coco.names'
+classFile = 'coco.names'
 with open(classFile,'rt') as f:
     classNames = f.read().rstrip('\n').split('\n')
 
