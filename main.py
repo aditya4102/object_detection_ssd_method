@@ -1,6 +1,5 @@
 import cv2
 
-#img = cv2.imread('Resources/lena.png')
 
 vid = cv2.VideoCapture(1)
 vid.set(3,640)
