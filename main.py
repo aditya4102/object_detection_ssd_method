@@ -1,9 +1,9 @@
 import cv2
 
 
-vid = cv2.VideoCapture(1)
-vid.set(3,640)
-vid.set(4,480)
+video = cv2.VideoCapture(1)
+video.set(3,640)
+video.set(4,480)
 
 
 classNames = []
@@ -21,7 +21,7 @@ net.setInputMean((127.5, 127.5, 127.5))
 net.setInputSwapRB(True)
 
 while True:
-    flag, img = vid.read()
+    flag, img = video.read()
     classIds,  confs, bbox = net.detect(img,confThreshold=0.5)
     print(classIds, bbox, confs)
 
